@@ -1,0 +1,31 @@
+include ../Global.make
+
+CC=$(COMPILER) $(COMPILER_FLAGS) -I$(PROJECT_DIR)
+
+BUILD_NAME=libGlobalLib.a
+OUT_DIR=$(BUILD_DIR)/lib
+OBJ_DIR=$(BUILD_DIR)/intermediate/$(BUILD_NAME)
+
+all: directories $(OUT_DIR)/$(BUILD_NAME)
+
+$(BUILD_NAME): DateTime.o Log.o
+
+$(OUT_DIR)/$(BUILD_NAME): $(OBJ_DIR)/DateTime.o $(OBJ_DIR)/Log.o
+	ar rv $@ $^
+
+$(OBJ_DIR)/DateTime.o: DateTime.cpp
+	$(CC) -c -o $(OBJ_DIR)/DateTime.o $^
+
+$(OBJ_DIR)/Log.o: Log.cpp
+	$(CC) -c -o $(OBJ_DIR)/Log.o $^
+
+directories: $(OUT_DIR) $(OBJ_DIR)
+
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(OUT_DIR):
+	mkdir -p $(OUT_DIR)
+
+clean:
+	rm -f $(OUT_DIR)/$(BUILD_NAME) $(OBJ_DIR)/*.o

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GlobalLib" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../build-cb-Debug/bin/GlobalLib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../build-cb-Debug/obj/" />
+				<Option type="2" />
+				<Option compiler="gnu_gcc-111_compiler" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-std=c++2a" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../build-cb-Release/bin/GlobalLib" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="../build-cb-Release/obj/" />
+				<Option type="2" />
+				<Option compiler="gnu_gcc-111_compiler" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add option="-std=c++2a" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="DateTime.cpp" />
+		<Unit filename="DateTime.h" />
+		<Unit filename="Global.h" />
+		<Unit filename="Log.cpp" />
+		<Unit filename="Log.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

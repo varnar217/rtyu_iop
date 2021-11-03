@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="SendMixedPcap" Database="" Version="10000">
+  <Project Name="SendMixedPcapApp" Path="SendMixedPcapApp/SendMixedPcapApp.project" Active="Yes"/>
+  <Project Name="GlobalLib" Path="GlobalLib/GlobalLib.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Environment>LIBPCAP=../../../vendors/libpcap/libpcap-1.10.1
+HTTPLIB=../../../vendors/cpp-httplib/cpp-httplib-0.9.5
+RESTINIO=../../../vendors/restinio/restinio-v.0.6.13/dev
+NLOHMANN=../../../vendors/json/nlohmann/json-3.10.2
+RAPIDJSON=../../../vendors/json/rapidjson/rapidjson-1.1.0</Environment>
+      <Project Name="SendMixedPcapApp" ConfigName="Debug"/>
+      <Project Name="GlobalLib" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment>LIBPCAP=../../../vendors/libpcap/libpcap-1.10.1
+HTTPLIB=../../../vendors/cpp-httplib/cpp-httplib-0.9.5
+RESTINIO=../../../vendors/restinio/restinio-v.0.6.13/dev
+NLOHMANN=../../../vendors/json/nlohmann/json-3.10.2
+RAPIDJSON=../../../vendors/json/rapidjson/rapidjson-1.1.0</Environment>
+      <Project Name="SendMixedPcapApp" ConfigName="Release"/>
+      <Project Name="GlobalLib" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

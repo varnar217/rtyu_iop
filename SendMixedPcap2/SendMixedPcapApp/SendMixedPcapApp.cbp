@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SendMixedPcapApp" />
+		<Option pch_mode="2" />
+		<Option compiler="gnu_gcc-111_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../build-cb-Debug/bin/SendMixedPcapApp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../build-cb-Debug/obj/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc-11_compiler" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-std=c++2a" />
+					<Add directory="$(LIBPCAP)" />
+					<Add directory="$(RESTINIO)" />
+					<Add directory="$(HTTPLIB)" />
+					<Add directory="$(NLOHMANN)/single_include" />
+					<Add directory="$(RAPIDJSON)/include" />
+					<Add directory="$(WORKSPACE_DIR)/GlobalLib" />
+				</Compiler>
+				<Linker>
+					<Add library="../build-cb-Debug/bin/libGlobalLib.a" />
+					<Add library="../../../vendors/libpcap/libpcap-1.10.1/libpcap.a" />
+					<Add library="pthread" />
+				</Linker>
+				<Environment>
+					<Variable name="HTTPLIB" value="../../../vendors/cpp-httplib/cpp-httplib-0.9.5" />
+					<Variable name="LIBPCAP" value="../../../vendors/libpcap/libpcap-1.10.1" />
+					<Variable name="NLOHMANN" value="../../../vendors/json/nlohmann/json-3.10.2" />
+					<Variable name="RAPIDJSON" value="../../../vendors/json/rapidjson/rapidjson-1.1.0" />
+					<Variable name="RESTINIO" value="../../../vendors/restinio/restinio-v.0.6.13/dev" />
+				</Environment>
+			</Target>
+			<Target title="Release">
+				<Option output="../build-cb-Release/bin/SendMixedPcapApp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../build-cb-Release/obj/" />
+				<Option type="1" />
+				<Option compiler="gnu_gcc-112_compiler" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++2a" />
+					<Add directory="$(LIBPCAP)" />
+					<Add directory="$(RESTINIO)" />
+					<Add directory="$(HTTPLIB)" />
+					<Add directory="$(NLOHMANN)/single_include" />
+					<Add directory="$(RAPIDJSON)/include" />
+					<Add directory="$(WORKSPACE_DIR)/GlobalLib" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../build-cb-Release/bin/libGlobalLib.a" />
+					<Add library="../../../vendors/libpcap/libpcap-1.10.1/libpcap.a" />
+					<Add library="pthread" />
+				</Linker>
+				<Environment>
+					<Variable name="HTTPLIB" value="../../../vendors/cpp-httplib/cpp-httplib-0.9.5" />
+					<Variable name="LJBPCAP" value="../../../vendors/libpcap/libpcap-1.10.1" />
+					<Variable name="NLOHMANN" value="../../../vendors/json/nlohmann/json-3.10.2" />
+					<Variable name="RAPIDJSON" value="../../../vendors/json/rapidjson/rapidjson-1.1.0" />
+					<Variable name="RESTINIO" value="../../../vendors/restinio/restinio-v.0.6.13/dev" />
+				</Environment>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="common.h" />
+		<Unit filename="eps_bearer.cpp" />
+		<Unit filename="eps_bearer.h" />
+		<Unit filename="eps_bearer_muxer.cpp" />
+		<Unit filename="eps_bearer_muxer.h" />
+		<Unit filename="generator_app.cpp" />
+		<Unit filename="generator_app.h" />
+		<Unit filename="http_server_api.cpp" />
+		<Unit filename="http_server_api.h" />
+		<Unit filename="http_server_httplib.cpp" />
+		<Unit filename="http_server_httplib.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="pcap_reader.cpp" />
+		<Unit filename="pcap_reader.h" />
+		<Unit filename="pcap_writer.cpp" />
+		<Unit filename="pcap_writer.h" />
+		<Unit filename="socket_sender.cpp" />
+		<Unit filename="socket_sender.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

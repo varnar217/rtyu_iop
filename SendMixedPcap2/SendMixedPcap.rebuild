@@ -1,0 +1,18 @@
+#! /bin/sh
+#
+
+cd ./GlobalLib
+make -f Makefile.linux clean
+cd ..
+
+cd ./SendMixedPcapApp
+make -f Makefile.linux clean
+cd ..
+
+cd ./GlobalLib
+make -f Makefile.linux
+cd ..
+
+cd ./SendMixedPcapApp
+make -f Makefile.linux
+cd ..

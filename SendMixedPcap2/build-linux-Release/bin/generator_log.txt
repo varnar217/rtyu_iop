@@ -1,0 +1,83 @@
+************************************************************
+2021-11-03T17:02:58.191736: Session started
+2021-11-03T17:02:58.191773: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:07:01.941213: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:07:53.713149: No Eps-Bearer Muxer statistics because Generator is not running
+************************************************************
+2021-11-03T17:09:37.606919: Session started
+2021-11-03T17:09:37.606958: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:20:33.671244: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:42:53.694521: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:43:34.386684: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:44:30.442059: PacketSender received a null packet
+2021-11-03T17:45:02.878897: PacketSender received a null packet
+2021-11-03T17:45:36.95347: PacketSender received a null packet
+2021-11-03T17:45:36.182779: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:45:41.417805: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:46:51.724347: PacketSender received a null packet
+2021-11-03T17:47:03.432264: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:47:14.888381: PacketSender received a null packet
+2021-11-03T17:47:17.107798: PacketSender received a null packet
+2021-11-03T17:47:17.190612: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:47:45.215258: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:47:59.953139: PacketSender received a null packet
+2021-11-03T17:48:00.45955: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:50:26.757013: PacketSender received a null packet
+2021-11-03T17:50:26.861433: No Eps-Bearer Muxer statistics because Generator is not running
+************************************************************
+2021-11-03T17:52:04.641855: Session started
+2021-11-03T17:52:04.641893: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:52:21.494041: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:53:30.571299: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T17:58:28.326248: PacketSender received a null packet
+2021-11-03T17:59:26.376423: PacketSender received a null packet
+2021-11-03T18:00:59.525826: No Eps-Bearer Muxer statistics because Generator is not running
+************************************************************
+2021-11-03T18:05:18.788876: Session started
+2021-11-03T18:05:18.788909: PacketSender received a null packet
+2021-11-03T18:05:19.443208: No Eps-Bearer Muxer statistics because Generator is not running
+************************************************************
+2021-11-03T18:08:38.801643: Session started
+2021-11-03T18:08:38.801674: PacketSender received a null packet
+2021-11-03T18:08:38.873958: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:08:53.302389: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:08:57.332217: PacketSender received a null packet
+2021-11-03T18:08:57.408468: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:10:35.565144: PacketSender received a null packet
+2021-11-03T18:10:35.641249: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:11:41.298096: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:12:09.288131: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:12:12.581607: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:12:43.423282: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:12:46.547401: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:13:28.944514: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:13:31.942484: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:13:43.524513: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:14:09.173434: No Eps-Bearer Muxer statistics because Generator is not running
+************************************************************
+2021-11-03T18:14:21.223290: Session started
+2021-11-03T18:14:21.223332: ResponseDeleteParamsNetworkScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:14:23.633863: NetworkScenario cannot be deleted because Generator has NO NetworkScenario with id=3
+2021-11-03T18:15:00.163914: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:15:17.735220: ResponseDeleteParamsNetworkScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:16:54.163756: ResponseDeleteParamsNetworkScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:17:12.40383: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:17:52.905367: ResponseDeleteParamsNetworkScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:18:10.978115: ResponseDeleteParamsNetworkScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:19:01.466164: ResponseDeleteParamsNetworkScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:19:02.921037: ResponseDeleteParamsNetworkScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:21:10.468055: NetworkScenario cannot be deleted because Generator has NO NetworkScenario with id=1
+2021-11-03T18:24:21.412859: ResponsePutParamsUserScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:24:22.424787: ResponsePutParamsUserScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:24:23.413191: ResponsePutParamsUserScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:24:24.213336: UserScenario cannot be deleted because Generator has NO UserScenario with id=9
+2021-11-03T18:24:26.895656: UserScenario cannot be deleted because Generator has NO UserScenario with id=9
+2021-11-03T18:25:26.937168: ResponsePutParamsUserScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:25:28.541337: UserScenario cannot be deleted because Generator has NO UserScenario with id=7
+2021-11-03T18:25:29.937147: ResponsePutParamsUserScenario: All parameters cannot be changed while Generator is running
+2021-11-03T18:26:56.628747: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:32:49.369912: No Eps-Bearer Muxer statistics because Generator is not running
+************************************************************
+2021-11-03T18:41:12.173469: Session started
+2021-11-03T18:41:12.173513: No Eps-Bearer Muxer statistics because Generator is not running
+2021-11-03T18:41:23.830511: No Eps-Bearer Muxer statistics because Generator is not running

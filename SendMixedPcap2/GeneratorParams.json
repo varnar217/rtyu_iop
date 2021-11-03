@@ -1,0 +1,555 @@
+{
+  "params": {
+    "app": [
+      {
+        "id": 1,
+        "name": "Instagram"
+      },
+      {
+        "id": 2,
+        "name": "Whatsapp"
+      },
+      {
+        "id": 3,
+        "name": "Youtube"
+      },
+      {
+        "id": 4,
+        "name": "TikTok"
+      },
+      {
+        "id": 5,
+        "name": "uTorrent"
+      },
+      {
+        "id": 6,
+        "name": "Google Drive App"
+      },
+      {
+        "id": 7,
+        "name": "MailRu Cloud App"
+      },
+      {
+        "id": 8,
+        "name": "Discord"
+      },
+      {
+        "id": 9,
+        "name": "Skype"
+      },
+      {
+        "id": 10,
+        "name": "LazyIPTV"
+      },
+      {
+        "id": 11,
+        "name": "Telegram"
+      },
+      {
+        "id": 12,
+        "name": "Zoom"
+      },
+      {
+        "id": 13,
+        "name": "Undefined"
+      }
+    ],
+    "br": 10000000000,
+    "eb": [
+      {
+        "br": 11000000,
+        "id": 1,
+        "network_scenario": {
+          "id": 1
+        },
+        "user_scenario": {
+          "id": 2
+        }
+      },
+      {
+        "br": 6600000,
+        "id": 2,
+        "network_scenario": {
+          "id": 1
+        },
+        "user_scenario": {
+          "id": 1
+        }
+      },
+      {
+        "br": 22900000,
+        "id": 3,
+        "network_scenario": {
+          "burst": {
+            "timedown": 5000,
+            "timeup": 5000
+          },
+          "id": 0,
+          "jitter": {
+            "timedown": 0,
+            "timeup": 1000,
+            "value": 500
+          },
+          "name": "Custom Jitter AllTheTime"
+        },
+        "user_scenario": {
+          "br": 22900000,
+          "id": 0,
+          "name": "Custom Mix Hi",
+          "pcap_id": [
+            2,
+            5,
+            6,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      }
+    ],
+    "file": {
+      "path": "../../../../files/pcap/output",
+      "size": 1024
+    },
+    "gtp": {
+      "ipdst": "192.168.1.222",
+      "ipsrc": "192.168.1.111",
+      "maxteid": 500,
+      "minteid": 1,
+      "use": false
+    },
+    "ipdst": "192.168.1.2",
+    "ipsrc": "192.168.1.11",
+    "mode": 0,
+    "network_scenario": [],
+    "pcap": [
+      {
+        "app": {
+          "id": 3
+        },
+        "br": 6585000,
+        "id": 1,
+        "path": "../../../../files/pcap/input/ip_0143_samsung_PCAPdroid_youtube.pcap",
+        "service": {
+          "id": 3
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 3
+        },
+        "br": 11000000,
+        "id": 2,
+        "path": "../../../../files/pcap/input/ip_0056d_notebook_tcpdump_wlan0_youtube_2160_(192.168.1.207).pcap",
+        "service": {
+          "id": 3
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 3
+        },
+        "br": 9149000,
+        "id": 3,
+        "path": "../../../../files/pcap/input/ip_0059d_notebook_tcpdump_wlan1_youtube_2160_(192.168.1.139).pcap",
+        "service": {
+          "id": 3
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 4
+        },
+        "br": 6370000,
+        "id": 4,
+        "path": "../../../../files/pcap/input/ip_0155_asus_tiktok_wifi_PCAPdroid.pcap",
+        "service": {
+          "id": 1
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 4
+        },
+        "br": 3791000,
+        "id": 5,
+        "path": "../../../../files/pcap/input/ip_0156_asus_tiktok_cellular_PCAPdroid.pcap",
+        "service": {
+          "id": 1
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 1
+        },
+        "br": 4516000,
+        "id": 6,
+        "path": "../../../../files/pcap/input/ip_0157_asus_instagram_wifi_PCAPdroid.pcap",
+        "service": {
+          "id": 1
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 1
+        },
+        "br": 4213000,
+        "id": 7,
+        "path": "../../../../files/pcap/input/ip_0158_asus_instagram_cellular_PCAPdroid.pcap",
+        "service": {
+          "id": 1
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 10
+        },
+        "br": 1632000,
+        "id": 8,
+        "path": "../../../../files/pcap/input/ip_0149_asus_PCAPdroid_lazyiptv_football.pcap",
+        "service": {
+          "id": 6
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 10
+        },
+        "br": 3781000,
+        "id": 9,
+        "path": "../../../../files/pcap/input/ip_0151_asus_PCAPdroid_lazyiptv_football.pcap",
+        "service": {
+          "id": 6
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 10
+        },
+        "br": 1642000,
+        "id": 10,
+        "path": "../../../../files/pcap/input/ip_0153_asus_PCAPdroid_lazyiptv_tennis.pcap",
+        "service": {
+          "id": 6
+        },
+        "video": true
+      },
+      {
+        "app": {
+          "id": 11
+        },
+        "br": 2740,
+        "id": 11,
+        "path": "../../../../files/pcap/input/Lev/Telegram_Chat.pcap",
+        "service": {
+          "id": 2
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 2
+        },
+        "br": 11000,
+        "id": 12,
+        "path": "../../../../files/pcap/input/Lev/WhatsApp_Chat.pcap",
+        "service": {
+          "id": 2
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 7584,
+        "id": 13,
+        "path": "../../../../files/pcap/input/Lev/EqualIntervals.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 3
+        },
+        "br": 2511000,
+        "id": 14,
+        "path": "../../../../files/pcap/input/Lev/YouTube_720p60_2.5mbps_android.pcap",
+        "service": {
+          "id": 3
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 11000000,
+        "id": 15,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/UDP/UDP_1ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 1102000,
+        "id": 16,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/UDP/UDP_10ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 220000,
+        "id": 17,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/UDP/UDP_50ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 110000,
+        "id": 18,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/UDP/UDP_100ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 51000,
+        "id": 19,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/UDP/UDP_500ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 51000,
+        "id": 20,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/UDP/UDP_1000ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 10000000,
+        "id": 21,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/TCP/TCP_1ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 1072000,
+        "id": 22,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/TCP/TCP_10ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 214000,
+        "id": 23,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/TCP/TCP_50ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 107000,
+        "id": 24,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/TCP/TCP_100ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 49000,
+        "id": 25,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/TCP/TCP_500ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      },
+      {
+        "app": {
+          "id": 13
+        },
+        "br": 49000,
+        "id": 26,
+        "path": "../../../../files/pcap/input/Lev/Synthetic/TCP/TCP_1000ms.pcap",
+        "service": {
+          "id": 7
+        },
+        "video": false
+      }
+    ],
+    "service": [
+      {
+        "id": 1,
+        "name": "Social media"
+      },
+      {
+        "id": 2,
+        "name": "Messenger"
+      },
+      {
+        "id": 3,
+        "name": "Video hosting"
+      },
+      {
+        "id": 4,
+        "name": "Cloud"
+      },
+      {
+        "id": 5,
+        "name": "Torrent"
+      },
+      {
+        "id": 6,
+        "name": "IPTV Sport"
+      },
+      {
+        "id": 7,
+        "name": "Undefined"
+      }
+    ],
+    "user_scenario": [
+      {
+        "br": 6600000,
+        "id": 1,
+        "name": "Youtube Low",
+        "pcap_id": [
+          1,
+          11,
+          12
+        ]
+      },
+      {
+        "br": 11000000,
+        "id": 2,
+        "name": "Youtube Hi",
+        "pcap_id": [
+          2,
+          11,
+          12
+        ]
+      },
+      {
+        "br": 10500000,
+        "id": 3,
+        "name": "SocialMedia Low",
+        "pcap_id": [
+          4,
+          7,
+          11,
+          12
+        ]
+      },
+      {
+        "br": 11000000,
+        "id": 4,
+        "name": "SocialMedia Hi",
+        "pcap_id": [
+          5,
+          6,
+          11,
+          12
+        ]
+      },
+      {
+        "br": 6598740,
+        "id": 6,
+        "name": "67",
+        "pcap_id": [
+          1,
+          11,
+          12
+        ]
+      },
+      {
+        "br": 6598740,
+        "id": 9,
+        "name": "uioopp",
+        "pcap_id": [
+          1,
+          11,
+          12
+        ]
+      },
+      {
+        "br": 11013740,
+        "id": 10,
+        "name": "890657",
+        "pcap_id": [
+          2,
+          11,
+          12
+        ]
+      },
+      {
+        "br": 6598740,
+        "id": 11,
+        "name": "567",
+        "pcap_id": [
+          1,
+          11,
+          12
+        ]
+      }
+    ]
+  }
+}

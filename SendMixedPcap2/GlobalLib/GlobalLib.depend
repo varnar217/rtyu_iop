@@ -1,0 +1,62 @@
+# depslib dependency file v1.0
+1591407430 source:/home/elija/Projects/HTP-LTE/Src/SendMixedPcap/GlobalLib/DateTime.cpp
+	"Global.h"
+	"DateTime.h"
+
+1591407430 /home/elija/Projects/HTP-LTE/Src/SendMixedPcap/GlobalLib/Global.h
+	<SDKDDKVer.h>
+	<stdint.h>
+	<stddef.h>
+
+1591407430 /home/elija/Projects/HTP-LTE/Src/SendMixedPcap/GlobalLib/DateTime.h
+	<string>
+	<chrono>
+	<ctime>
+
+1631719379 source:/home/elija/Projects/HTP-LTE/Src/SendMixedPcap/GlobalLib/Log.cpp
+	"Global.h"
+	"Log.h"
+	<cstdarg>
+	<cstdio>
+	<mutex>
+	<android/log.h>
+
+1594203375 /home/elija/Projects/HTP-LTE/Src/SendMixedPcap/GlobalLib/Log.h
+	"Global.h"
+	<functional>
+	<mutex>
+	<mutex>
+	<iostream>
+	<utility>
+
+1634860333 source:/home/elija/Projects/HTP/src/SendMixedPcap/GlobalLib/DateTime.cpp
+	"Global.h"
+	"DateTime.h"
+
+1591407430 /home/elija/Projects/HTP/src/SendMixedPcap/GlobalLib/Global.h
+	<SDKDDKVer.h>
+	<stdint.h>
+	<stddef.h>
+
+1634860336 /home/elija/Projects/HTP/src/SendMixedPcap/GlobalLib/DateTime.h
+	<string>
+	<chrono>
+	<ctime>
+
+1634860448 source:/home/elija/Projects/HTP/src/SendMixedPcap/GlobalLib/Log.cpp
+	"Global.h"
+	"Log.h"
+	"DateTime.h"
+	<cstdarg>
+	<cstdio>
+	<mutex>
+	<android/log.h>
+
+1634860341 /home/elija/Projects/HTP/src/SendMixedPcap/GlobalLib/Log.h
+	"Global.h"
+	<functional>
+	<mutex>
+	<mutex>
+	<iostream>
+	<utility>
+

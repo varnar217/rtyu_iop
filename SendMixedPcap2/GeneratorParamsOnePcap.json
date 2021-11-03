@@ -1,0 +1,380 @@
+{
+  "params": {
+    "mode": 0,
+    "br": 10000000000,
+    "ipsrc": "192.168.1.11",
+    "ipdst": "192.168.1.22",
+    "file": {
+      "path": "../../../../files/pcap/output",
+      "size": 2000
+    },
+    "gtp": {
+      "use": true,
+      "ipsrc": "192.168.1.111",
+      "ipdst": "192.168.1.222",
+      "minteid": 1,
+      "maxteid": 500
+    },
+    "service": [ {
+      "id": 1,
+      "name": "Social Media"
+      }, {
+      "id": 2,
+      "name": "Messenger"
+      }, {
+      "id": 3,
+      "name": "Video Streaming"
+      }, {
+      "id": 4,
+      "name": "Cloud"
+      }, {
+      "id": 5,
+      "name": "Torrent"
+      }, {
+      "id": 6,
+      "name": "Sport"
+      }, {
+      "id": 7,
+      "name": "Audio Streaming"
+      }, {
+      "id": 9,
+      "name": "News Feed"
+      }, {
+      "id": 10,
+      "name": "Software Update"
+      }, {
+      "id": 11,
+      "name": "Games Playing"
+      }, {
+      "id": 12,
+      "name": "Browsing"
+      }, {
+      "id": 13,
+      "name": "Marketplace"
+      }, {
+      "id": 14,
+      "name": "Undefined"
+      }
+    ],
+    "app": [ {
+      "id": 1,
+      "name": "Instagram"
+      }, {
+      "id": 2,
+      "name": "Whatsapp"
+      }, {
+      "id": 3,
+      "name": "Youtube"
+      }, {
+      "id": 4,
+      "name": "TikTok"
+      }, {
+      "id": 5,
+      "name": "uTorrent"
+      }, {
+      "id": 6,
+      "name": "Google Drive App"
+      }, {
+      "id": 7,
+      "name": "MailRu Cloud App"
+      }, {
+      "id": 8,
+      "name": "Discord"
+      }, {
+      "id": 9,
+      "name": "Skype"
+      }, {
+      "id": 10,
+      "name": "LazyIPTV"
+      }, {
+      "id": 11,
+      "name": "Telegram"
+      }, {
+      "id": 12,
+      "name": "Zoom"
+      }, {
+      "id": 13,
+      "name": "Facebook"
+      }, {
+      "id": 14,
+      "name": "Yandex Music"
+      }, {
+      "id": 15,
+      "name": "Undefined"
+      }
+    ],
+    "pcap": [ {
+      "id": 1,
+      "video": true,
+      "service": {
+        "id": 3
+       },
+      "app": {
+        "id": 3
+       },
+      "br": 1077000,
+      "path": "../../../../files//pcap/input/PMI/Youtube1077k.pcap"
+    }, {
+      "id": 2,
+      "video": true,
+      "service": {
+        "id": 3
+       },
+      "app": {
+        "id": 3
+       },
+      "br": 5301000,
+      "path": "../../../../files//pcap/input/PMI/Youtube_5301k.pcap"
+    }, {
+      "id": 3,
+      "video": true,
+      "service": {
+        "id": 3
+       },
+      "app": {
+        "id": 3
+       },
+      "br": 9021000,
+      "path": "../../../../files//pcap/input/PMI/Youtube9021k.pcap"
+    }, {
+      "id": 4,
+      "video": true,
+      "service": {
+        "id": 1
+       },
+      "app": {
+        "id": 4
+       },
+      "br": 1646000,
+      "path": "../../../../files//pcap/input/PMI/TikTok1646k.pcap"
+    }, {
+      "id": 5,
+      "video": false,
+      "service": {
+        "id": 7
+       },
+      "app": {
+        "id": 14
+       },
+      "br": 997000,
+      "path": "../../../../files//pcap/input/PMI/YandexMusicFastScrolling997k.pcap"
+    }, {
+      "id": 6,
+      "video": false,
+      "service": {
+        "id": 14
+       },
+      "app": {
+        "id": 15
+       },
+      "br": 110000,
+      "path": "../../../../files//pcap/input/PMI/UDP_0.11mbps.pcap"
+    }, {
+      "id": 7,
+      "video": false,
+      "service": {
+        "id": 14
+       },
+      "app": {
+        "id": 15
+       },
+      "br": 1000000,
+      "path": "../../../../files//pcap/input/PMI/UDP_1mbps.pcap"
+    }, {
+      "id": 8,
+      "video": false,
+      "service": {
+        "id": 14
+       },
+      "app": {
+        "id": 15
+       },
+      "br": 2000000,
+      "path": "../../../../files//pcap/input/PMI/UDP_2mbps.pcap"
+    }, {
+      "id": 9,
+      "video": false,
+      "service": {
+        "id": 14
+       },
+      "app": {
+        "id": 15
+       },
+      "br": 48000000,
+      "path": "../../../../files//pcap/input/PMI/UDP_48mbps.pcap"
+    }, {
+      "id": 10,
+      "video": false,
+      "service": {
+        "id": 14
+       },
+      "app": {
+        "id": 15
+       },
+      "br": 50000000,
+      "path": "../../../../files//pcap/input/PMI/UDP_50mbps.pcap"
+    }, {
+      "id": 11,
+      "video": false,
+      "service": {
+        "id": 14
+       },
+      "app": {
+        "id": 15
+       },
+      "br": 110240,
+      "path": "../../../../files//pcap/input/PMI/UDP_100ms.pcap"
+    } ],
+    "user_scenario": [ { 
+      "id": 1,
+      "name": "Youtube Video 1 Mbps",
+      "br": 1077000,
+      "pcap_id": [
+        1
+      ]
+    }, { 
+      "id": 2,
+      "name": "Youtube Video 4 Mbps",
+      "br": 5301000,
+      "pcap_id": [
+        2
+      ]
+    }, { 
+      "id": 3,
+      "name": "Youtube Video 10 Mbps",
+      "br": 9021000,
+      "pcap_id": [
+        3
+      ]
+    }, { 
+      "id": 4,
+      "name": "Social Media 1 Mbps",
+      "br": 1646000,
+      "pcap_id": [
+        4
+      ]
+    }, { 
+      "id": 5,
+      "name": "Yandex Music 1 Mbps",
+      "br": 997000,
+      "pcap_id": [
+        5
+      ]
+    }, { 
+      "id": 6,
+      "name": "Synthetic PCAP 0.1 Mbps",
+      "br": 110000,
+      "pcap_id": [
+        6
+      ]
+    }, { 
+      "id": 7,
+      "name": "Synthetic PCAP 1 Mbps",
+      "br": 1000000,
+      "pcap_id": [
+        7
+      ]
+    }, { 
+      "id": 8,
+      "name": "Synthetic PCAP 2 Mbps",
+      "br": 2000000,
+      "pcap_id": [
+        8
+      ]
+    }, { 
+      "id": 9,
+      "name": "Synthetic PCAP 48 Mbps",
+      "br": 48000000,
+      "pcap_id": [
+        9
+      ]
+    }, { 
+      "id": 10,
+      "name": "Synthetic PCAP 50 Mbps",
+      "br": 50000000,
+      "pcap_id": [
+        10
+      ]
+    }, { 
+      "id": 11,
+      "name": "Synthetic PCAP For Jitter Measurement",
+      "br": 110240,
+      "pcap_id": [
+        11
+      ]
+    } ],
+    "network_scenario": [ {
+      "id": 1,
+      "name": "No change",
+      "jitter": {
+        "timeup": 0,
+        "timedown": 0,
+        "value": 0
+      },
+      "burst": {
+        "timeup": 0,
+        "timedown": 0
+      }
+    }, {
+      "id": 2,
+      "name": "Jitter",
+      "jitter": {
+        "timeup": 1000,
+        "timedown": 0,
+        "value": 5000
+      },
+      "burst": {
+        "timeup": 0,
+        "timedown": 0
+      }
+    }, {
+      "id": 3,
+      "name": "Burst",
+      "jitter": {
+        "timeup": 0,
+        "timedown": 0,
+        "value": 0
+      },
+      "burst": {
+        "timeup": 6000,
+        "timedown": 4000
+      }
+    }, {
+      "id": 4,
+      "name": "Jitter and Burst",
+      "jitter": {
+        "timeup": 1000,
+        "timedown": 500,
+        "value": 1000
+      },
+      "burst": {
+        "timeup": 6000,
+        "timedown": 4000
+      }
+    } ],
+    "eb": [ {
+      "id": 1,
+      "br": 1077000,
+      "user_scenario": {
+        "id": 0,
+        "name": "Custom",
+        "br": 1077000,
+        "pcap_id": [
+          1
+        ] },
+      "network_scenario": {
+        "id": 0,
+        "name": "Custom No Change",
+        "jitter": {
+          "timeup": 0,
+          "timedown": 0,
+          "value": 0
+        },
+        "burst": {
+          "timeup": 0,
+          "timedown": 0
+        }
+      }
+    } ]
+  }
+}

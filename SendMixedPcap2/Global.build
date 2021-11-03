@@ -1,0 +1,6 @@
+#! /bin/sh
+#
+
+cd ./GlobalLib
+make -f Makefile.linux
+cd ..

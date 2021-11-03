@@ -1,0 +1,53 @@
+include ../SendMixedPcap.make
+
+BUILD_NAME=SendMixedPcapApp
+OUT_DIR=$(BUILD_DIR)/bin
+OBJ_DIR=$(BUILD_DIR)/intermediate/$(BUILD_NAME)
+
+ALL_LIBS=$(BUILD_DIR)/lib/libGlobalLib.a
+VENDOR_LIBS= $(LIBPCAP_DIR)/libpcap.a -lpthread
+
+CC=$(COMPILER) $(COMPILER_FLAGS) -I$(PROJECT_DIR) -I$(GLOBALLIB_DIR) -I$(LIBPCAP_DIR) -I$(HTTPLIB_DIR) -I$(NLOHMANN_DIR)/single_include -I$(RAPIDJSON_DIR)/include
+
+all: directories $(OUT_DIR)/$(BUILD_NAME)
+
+$(OUT_DIR)/$(BUILD_NAME): $(OBJ_DIR)/main.o $(OBJ_DIR)/generator_app.o $(OBJ_DIR)/socket_sender.o $(OBJ_DIR)/pcap_reader_f.o $(OBJ_DIR)/pcap_reader_l.o $(OBJ_DIR)/pcap_writer.o $(OBJ_DIR)/http_server_api.o $(OBJ_DIR)/http_server_httplib.o $(OBJ_DIR)/common.o $(ALL_LIBS)
+	$(CC) -o $(OUT_DIR)/$(BUILD_NAME) $(OBJ_DIR)/main.o $(OBJ_DIR)/generator_app.o $(OBJ_DIR)/socket_sender.o $(OBJ_DIR)/pcap_reader_f.o $(OBJ_DIR)/pcap_reader_l.o $(OBJ_DIR)/pcap_writer.o $(OBJ_DIR)/http_server_api.o $(OBJ_DIR)/http_server_httplib.o $(OBJ_DIR)/common.o $(ALL_LIBS) $(LINKER_FLAGS) $(VENDOR_LIBS)
+
+$(OBJ_DIR)/main.o: main.cpp
+	$(CC) -c -o $(OBJ_DIR)/main.o $^
+
+$(OBJ_DIR)/common.o: common.cpp
+	$(CC) -c -o $(OBJ_DIR)/common.o $^
+
+$(OBJ_DIR)/generator_app.o: generator_app.cpp
+	$(CC) -c -o $(OBJ_DIR)/generator_app.o $^
+
+$(OBJ_DIR)/socket_sender.o: socket_sender.cpp
+	$(CC) -c -o $(OBJ_DIR)/socket_sender.o $^
+
+$(OBJ_DIR)/pcap_reader_f.o: pcap_reader_f.cpp
+	$(CC) -c -o $(OBJ_DIR)/pcap_reader_f.o $^
+
+$(OBJ_DIR)/pcap_reader_l.o: pcap_reader_l.cpp
+	$(CC) -c -o $(OBJ_DIR)/pcap_reader_l.o $^
+
+$(OBJ_DIR)/pcap_writer.o: pcap_writer.cpp
+	$(CC) -c -o $(OBJ_DIR)/pcap_writer.o $^
+
+$(OBJ_DIR)/http_server_api.o: http_server_api.cpp
+	$(CC) -c -o $(OBJ_DIR)/http_server_api.o $^
+
+$(OBJ_DIR)/http_server_httplib.o: http_server_httplib.cpp
+	$(CC) -c -o $(OBJ_DIR)/http_server_httplib.o $^
+
+directories: $(OUT_DIR) $(OBJ_DIR)
+
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(OUT_DIR):
+	mkdir -p $(OUT_DIR)
+
+clean:
+	rm -f $(OUT_DIR)/$(BUILD_NAME) $(OBJ_DIR)/*.o
